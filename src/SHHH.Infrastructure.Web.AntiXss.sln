@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{939A437C-CFDA-424F-8012-8D13AD60B6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.Web.AntiXss", "SHHH.Infrastructure.Web.AntiXss\SHHH.Infrastructure.Web.AntiXss.csproj", "{C5DE1D43-E46E-4C8A-A9C1-DB45F3C7A72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.Web.AntiXss.Tests", "SHHH.Infrastructure.Web.AntiXss.Tests\SHHH.Infrastructure.Web.AntiXss.Tests.csproj", "{80200581-018A-4A1E-9E0B-A2B2D794B334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5DE1D43-E46E-4C8A-A9C1-DB45F3C7A72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DE1D43-E46E-4C8A-A9C1-DB45F3C7A72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DE1D43-E46E-4C8A-A9C1-DB45F3C7A72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DE1D43-E46E-4C8A-A9C1-DB45F3C7A72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80200581-018A-4A1E-9E0B-A2B2D794B334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80200581-018A-4A1E-9E0B-A2B2D794B334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80200581-018A-4A1E-9E0B-A2B2D794B334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80200581-018A-4A1E-9E0B-A2B2D794B334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80200581-018A-4A1E-9E0B-A2B2D794B334} = {939A437C-CFDA-424F-8012-8D13AD60B6A7}
+	EndGlobalSection
+EndGlobal
