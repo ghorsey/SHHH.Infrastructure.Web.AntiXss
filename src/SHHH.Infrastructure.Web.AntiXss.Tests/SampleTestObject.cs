@@ -5,6 +5,10 @@
     /// </summary>
     public class SampleTestObject
     {
+        public SampleTestObject()
+        {
+            this.PrivateSetProperty = "This <script>alert('boo');</script> is unsafe";
+        }
         /// <summary>
         /// The string field
         /// </summary>
@@ -70,5 +74,22 @@
         /// </value>
         [MakeXssSafe]
         public int IntProperty { get; set; }
+
+        /// <summary>
+        /// Gets the private set property.
+        /// </summary>
+        /// <value>
+        /// The private set property.
+        /// </value>
+        [MakeXssSafe]
+        public string PrivateSetProperty { get; private set; }
+
+        /// <summary>
+        /// Gets or sets the allow unsafe.
+        /// </summary>
+        /// <value>
+        /// The allow unsafe.
+        /// </value>
+        public string AllowUnsafe { get; set; }
     }
 }

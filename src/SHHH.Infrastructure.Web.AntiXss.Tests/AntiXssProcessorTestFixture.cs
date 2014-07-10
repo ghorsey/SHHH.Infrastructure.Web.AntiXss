@@ -23,9 +23,10 @@
                                  IntProperty = 23,
                                  ObjectField = Guid.NewGuid(),
                                  StringField =
-                                     "string <script>alert('boo!');</script> with some potentially dangerous code",
+                                     "string <script>alert('boo!');</script> with <b>some potentially</b> dangerous code",
                                  StringProperty =
-                                     "<a href='#' onclick='alert(\"ooo\")'>A link with some potentially dangerous code</a>"
+                                     "<a href='#' onclick='alert(\"ooo\")'>A link with some potentially dangerous code</a>",
+                                 AllowUnsafe = "string <script>alert('boo!');</script> with <b>some potentially</b> dangerous code" 
                              };
 
             processor.ProcessObject(testObject);
@@ -33,9 +34,14 @@
             Assert.AreEqual(23, testObject.IntProperty);
             Assert.IsNotNull(testObject.ObjectField);
             Assert.AreEqual(
-                "string <script>alert('boo!');</script> with some potentially dangerous code",
+                "string with <b>some potentially</b> dangerous code",
                 testObject.StringField);
-            Assert.AreEqual("<a href='#'>A link with some potentially dangerous code</a>", testObject.StringProperty);
+            Assert.AreEqual("<a href=\"\">A link with some potentially dangerous code</a>", testObject.StringProperty);
+
+            Assert.AreEqual("This is unsafe", testObject.PrivateSetProperty);
+            Assert.AreEqual(
+                "string <script>alert('boo!');</script> with <b>some potentially</b> dangerous code",
+                testObject.AllowUnsafe);
         }
         
     }
