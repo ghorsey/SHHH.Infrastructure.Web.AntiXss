@@ -9,6 +9,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.Web.Ant
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.Web.AntiXss.Tests", "SHHH.Infrastructure.Web.AntiXss.Tests\SHHH.Infrastructure.Web.AntiXss.Tests.csproj", "{80200581-018A-4A1E-9E0B-A2B2D794B334}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0B8D5FC7-B606-4451-986F-7D8A888C7C0E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81BD5DFB-CB58-4BC0-82B9-1E5A507CAD32}"
+	ProjectSection(SolutionItems) = preProject
+		SHHH.Infrastructure.Web.AntiXss\makefile = SHHH.Infrastructure.Web.AntiXss\makefile
+		SHHH.Infrastructure.Web.AntiXss\SHHH.Infrastructure.Web.AntiXss.nuspec = SHHH.Infrastructure.Web.AntiXss\SHHH.Infrastructure.Web.AntiXss.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SHHH.Infrastructure.Web.AntiXss")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A utility to easily run string properties through Microsoft's AntiXSS library")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("SHHH Innovations LLC")]
 [assembly: AssemblyProduct("SHHH.Infrastructure.Web.AntiXss")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
